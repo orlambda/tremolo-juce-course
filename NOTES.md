@@ -3,6 +3,12 @@
 ## To resolve
 - Can't attach to Reaper in CLion
 
+## Opening in CLion for the first time
+Open Project Wizard
+- tick Reload CMake on editing CML/CMake config files
+- course says only enable default for now
+- reload CMake project (right click CML)
+
 ## Audio deadline details
 'Fast' in audio programming
 waiting for worker threads has a non-deterministic execution time
