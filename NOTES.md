@@ -26,7 +26,7 @@ Don't do this on the audio thread:
 - locking or unlocking
     - (some rare exceptions)
     - use std::atomic for float etc. but atomic may use a lock internally for larger data types
-    - use static_assert(std::atomic<DataType>::is_always_lock_free) to prevent compilation
+    - use static_assert(std::atomic<DataType>::is_always_lock_free) to prevent compilation if a lock is used
 - start new threads or wait for threads
 - i/o
 - algorithm with unpredictable/poor worst-case execution time
